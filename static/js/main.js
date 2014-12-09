@@ -5,7 +5,7 @@ var map = L.mapbox.map('map', 'garbray.ke8hclf1'),
     listings = document.getElementById('listings'),
     locations = L.mapbox.featureLayer().addTo(map);
 
-locations.loadURL('/static/js/places.js'); // load in your own GeoJSON file here
+locations.loadURL('/mapboxTest/static/js/places.js'); // load in your own GeoJSON file here
 
 function setActive(el) {
   var siblings = listings.getElementsByTagName('div');
